@@ -1,0 +1,11 @@
+#name path version flags
+#flags are flags that determine requirements for running
+#current flags are
+# s - super user
+# l - installs to $PWD, does not create install record
+# f - uses custom format, creates install record for easy uninstalling 
+#regex used to cut out comments "^[^#]*"
+#regex used to check for starting line with a # "^\s*\#"
+shc /shc-git latest f
+papermc /papermc.sh latest l
+sudo-test /sudo_test.sh latest s

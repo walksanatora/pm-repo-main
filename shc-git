@@ -1,0 +1,6 @@
+#we start at ~/.local/opt
+git-clone https://github.com/neurobin/shc #git clone, or pull if it allready exist
+cd shc #change directory
+./configure #run configure from local dir
+make #run make with automatic -j flags
+install src/shc #copies src/shc to ~/.local/bin and makes a record for easy uninstall
